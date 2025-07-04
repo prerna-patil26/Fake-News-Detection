@@ -1,178 +1,106 @@
-## 📰 Fake News Detection Web App
+# 📰 Fake News Detection Web App
 
-### 🚀 Overview
-# Fake News Detection is a powerful and interactive web application built using machine learning
-# and NLP techniques to detect whether a news article is Fake or Real.
-# The app includes insightful metrics, sentiment & readability analysis, LIME-based model explanations,
-# and an intuitive UI for both manual and URL-based predictions.
-# 🔗 Live Demo: https://fake-news-detection-prerna.streamlit.app
+## 🚀 Project Overview
 
+**Fake News Detection** is a powerful and interactive web application built using **Machine Learning** and **NLP techniques** to classify whether a news article is *Fake* or *Real*.  
 
-## ✨ Features
+The app offers real-time predictions, URL-based article analysis, LIME-based interpretability, sentiment analysis, and an engaging user experience using **Streamlit**.
 
-### 🔍 Single Article Detection
-# Input any news text and instantly predict whether it’s fake or real.
+🔗 **Live Demo**: [Fake News Detection App](https://fake-news-detection-prerna.streamlit.app)
 
-### 🌐 URL-Based Prediction
-# Paste a news article URL, and the app scrapes and analyzes it automatically.
+---
 
-### 📊 Prediction Output
-# Prediction label, confidence %, word count, character count, sentiment polarity, and readability score.
+## ✨ Key Features
 
-### ☁️ WordCloud Generator
-# Generates a word cloud of the most frequent terms in the article.
+- 🔍 **Single Article Detection**:  
+  Enter any news content and get instant classification as fake or real.
 
-### 🧠 Explainable AI (LIME)
-# Highlights which words most influenced the prediction.
+- 🌐 **URL-Based Prediction**:  
+  Paste a news article URL – the app scrapes and analyzes the content automatically.
 
-### 📉 Interactive Visualizations
-# Charts for text analytics like sentiment, readability, and word frequency.
+- 📊 **Prediction Output**:  
+  Includes label, confidence percentage, word & character count, sentiment polarity, and readability score.
 
-### 🎨 Modern UI
-# Built with Streamlit — fast, responsive, and theme-adaptive design.
+- ☁️ **WordCloud Generator**:  
+  Visualizes the most frequent terms in the article for better context.
 
+- 🧠 **Explainable AI (LIME)**:  
+  Highlights influential words that guided the model’s prediction.
 
-## 🛠️ Tech Stack
+- 📉 **Interactive Visualizations**:  
+  Explore sentiment, word frequency, and readability via graphs and charts.
 
-### Frontend
-# Streamlit
+- 🎨 **Modern UI**:  
+  Built using Streamlit with a responsive, theme-adaptive interface.
 
-### Backend
-# Python 3
+---
 
-### ML Models
-# scikit-learn, XGBoost
+## 🛠 Tech Stack
 
-### Data Handling
-# Pandas, NumPy
+- **Frontend**: Streamlit  
+- **Backend**: Python  
+- **ML Models**: scikit-learn, XGBoost  
+- **Text Analytics**: TextBlob, textstat, WordCloud  
+- **Vectorization**: TF-IDF  
+- **Explainability**: LIME  
+- **Visualization**: Plotly, Seaborn, Matplotlib  
+- **Data Wrangling**: Pandas, NumPy  
+- **Web Scraping**: BeautifulSoup, requests  
+- **Model Serialization**: Joblib
 
-### Visualization
-# Plotly, Matplotlib, Seaborn
-
-### Explainability
-# LIME
-
-### Text Analytics
-# TextBlob, textstat, WordCloud
-
-### Scraping
-# BeautifulSoup, requests
-
-### Model Serialization
-# Joblib
-
+---
 
 ## 📂 Project Structure
 
-### .
-#### ├── app.py
-# Main Streamlit app
+.
+├── app.py # Main Streamlit app
+├── requirements.txt # Python dependencies
+├── styles.css # Custom CSS styles
+├── fake_news_detection.ipynb # Model training and EDA notebook
+├── Datasets/
+│ ├── Fake.csv # Fake news dataset
+│ └── True.csv # Real news dataset
+├── app_pages/ # Modular UI pages
+│ ├── How_to_Use.py
+│ ├── Tips_for_Spotting_fake_news.py
+│ └── About_the_technology.py
+├── fake_news_pipeline.joblib # Trained ML pipeline
+├── ensemble_model.joblib # Ensemble model
+├── lime_config.joblib # LIME configuration
+├── tfidf_vectorizer.joblib # TF-IDF vectorizer
+└── README.md # Project documentation
 
-#### ├── requirements.txt
-# Python dependencies
 
-#### ├── styles.css
-# Custom CSS styles
-
-#### ├── fake_news_detection.ipynb
-# Notebook with experiments & EDA
-
-### Datasets/
-#### ├── Fake.csv
-# Fake news data
-
-#### ├── True.csv
-# Real news data
-
-### app_pages/
-#### ├── How_to_Use.py
-# Instructions page
-
-#### ├── Tips_for_Spotting_fake_news.py
-# Tips for identifying fake news
-
-#### └── About_the_technology.py
-# Details about the underlying technology
-
-### pages/ (optional duplicate)
-#### ├── How_to_Use.py
-# Instructions page
-
-#### ├── Tips_for_Spotting_fake_news.py
-# Tips for identifying fake news
-
-#### └── About_the_technology.py
-# Details about the underlying technology
-
-#### ├── fake_news_pipeline.joblib
-# Trained ML pipeline
-
-#### ├── ensemble_model.joblib
-# Ensemble model
-
-#### ├── lime_config.joblib
-# LIME configuration
-
-#### ├── tfidf_vectorizer.joblib
-# TF-IDF vectorizer
-
-#### └── README.md
-# This documentation file
-
+---
 
 ## 📈 How It Works
 
-### Input Text or URL
-# Users can type a news article or paste a URL.
+1. **Input Text or URL**  
+   Users can manually input news content or paste a news article link.
 
-### Preprocessing & Prediction
-# The app processes the input using a trained ML pipeline and vectorizer.
+2. **Preprocessing & Prediction**  
+   The input is preprocessed, vectorized, and passed into a trained ML model.
 
-### Prediction Output
-# Displays prediction label, probability, sentiment, readability, etc.
+3. **Output Results**  
+   The app returns the classification label (Fake/Real), confidence %, sentiment score, and more.
 
-### Explainability
-# LIME highlights the top words influencing the result.
+4. **Explanation with LIME**  
+   LIME visually highlights the most influential words in the article that affected the prediction.
 
-### Visuals
-# Word cloud, sentiment graphs, readability charts, and more.
+5. **Visualizations**  
+   Word clouds, sentiment graphs, readability scores, and text analytics are displayed interactively.
 
+---
 
 ## 🏁 Getting Started
 
-### 🔧 Step 1: Clone the Repository
-# git clone https://github.com/prerna-patil26/fake-news-detection.git
-# cd fake-news-detection
+Follow the steps below to clone and run the project locally:
 
-### 📦 Step 2: Install Dependencies
-# pip install -r requirements.txt
+### 📦 Step 1: Clone the Repository
 
-### ▶️ Step 3: Run the App
-# streamlit run app.py
-
-# Then open the app in your browser at http://localhost:8501 or use the Live Demo link.
+```bash
+git clone https://github.com/prerna-patil26/fake-news-detection.git
+cd fake-news-detection
 
 
-## 📚 Dataset
 
-### Source
-# Fake.csv and True.csv
-# Source: Kaggle - Fake and Real News Dataset
-# https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset
-
-
-## 👩‍💻 Author
-
-### About
-# Prerna Patil
-# 📧 Email: prernapatil2608@gmail.com
-# 🎓 MCA Student | 🤖 Data Science & Machine Learning Enthusiast
-# 🔗 LinkedIn: https://www.linkedin.com/in/prerna-patil26
-
-
-## 🙏 Acknowledgements
-
-### Thanks To
-# Kaggle – Fake and Real News Dataset
-# Streamlit, scikit-learn, LIME, Plotly, XGBoost
-# Open-source contributors & the Python community 💙
