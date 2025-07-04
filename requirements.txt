@@ -8,3 +8,4 @@ seaborn
 lime
 joblib
 plotly
+wordcloud
