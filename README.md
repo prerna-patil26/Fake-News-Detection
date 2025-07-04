@@ -53,22 +53,29 @@ The app offers real-time predictions, URL-based article analysis, LIME-based int
 ## 📂 Project Structure
 
 .
-├── app.py # Main Streamlit app
+├── app.py # Main Streamlit application
 ├── requirements.txt # Python dependencies
 ├── styles.css # Custom CSS styles
-├── fake_news_detection.ipynb # Model training and EDA notebook
+├── fake_news_detection.ipynb # Jupyter notebook with EDA and experiments
+│
 ├── Datasets/
 │ ├── Fake.csv # Fake news dataset
 │ └── True.csv # Real news dataset
-├── app_pages/ # Modular UI pages
-│ ├── How_to_Use.py
-│ ├── Tips_for_Spotting_fake_news.py
-│ └── About_the_technology.py
-├── fake_news_pipeline.joblib # Trained ML pipeline
-├── ensemble_model.joblib # Ensemble model
-├── lime_config.joblib # LIME configuration
-├── tfidf_vectorizer.joblib # TF-IDF vectorizer
+│
+├── app_pages/ # Streamlit pages
+│ ├── How_to_Use.py # App instructions
+│ ├── Tips_for_Spotting_fake_news.py # Fake news identification tips
+│ └── About_the_technology.py # Technology explanations
+│
+├── models/ # Serialized models
+│ ├── fake_news_pipeline.joblib # Main ML pipeline
+│ ├── ensemble_model.joblib # Ensemble model
+│ ├── lime_config.joblib # LIME explainer config
+│ └── tfidf_vectorizer.joblib # TF-IDF vectorizer
+│
 └── README.md # Project documentation
+
+
 
 
 ---
