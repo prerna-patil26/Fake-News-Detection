@@ -10,3 +10,4 @@ joblib
 plotly
 wordcloud
 textblob
+textstat
