@@ -6,7 +6,7 @@
 
 The app includes insightful metrics, sentiment & readability analysis, **LIME-based model explanations**, and an intuitive UI for both **manual text input** and **URL-based predictions**.
 
-🔗 **Live Demo**: [Fake News Detection App](#) *(replace with actual link)*
+🔗 **Live Demo**: [Fake News Detection App]([(https://fake-news-detection-prerna.streamlit.app])
 
 ---
 
@@ -134,12 +134,16 @@ This project uses a labeled dataset of real and fake news articles for training 
 
 
 
+
 ## 👩‍💻 Author
 
 **Prerna Patil**  
 🎓 MCA Student | 🤖 Data Science & Machine Learning Enthusiast  
 📧 Email: [prernapatil2608@gmail.com](mailto:prernapatil2608@gmail.com)  
 🔗 [LinkedIn Profile](#) <!-- Replace with your actual LinkedIn profile link -->
+
+
+
 
 ## ⭐ Show Your Support
 
