@@ -9,3 +9,4 @@ lime
 joblib
 plotly
 wordcloud
+textblob
