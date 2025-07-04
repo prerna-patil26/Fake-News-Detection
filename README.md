@@ -49,27 +49,27 @@ The app includes insightful metrics, sentiment and readability analysis, LIME-ba
 ---
 
 # 📂 Project Structure
-# .
-# ├── app.py                         # Main Streamlit app
-# ├── requirements.txt              # Python dependencies
-# ├── styles.css                    # Custom CSS styles
-# ├── fake_news_detection.ipynb    # Notebook with experiments & EDA
-# ├── Datasets/
-# │   ├── Fake.csv
-# │   └── True.csv
-# ├── app_pages/                    # Modular Streamlit pages
-# │   ├── How_to_Use.py
-# │   ├── Tips_for_Spotting_fake_news.py
-# │   └── About_the_technology.py
-# ├── pages/                        # (Duplicate, optional — remove if unused)
-# │   ├── How_to_Use.py
-# │   ├── Tips_for_Spotting_fake_news.py
-# │   └── About_the_technology.py
-# ├── fake_news_pipeline.joblib     # Trained ML pipeline
-# ├── ensemble_model.joblib         # Ensemble model
-# ├── lime_config.joblib            # LIME configuration
-# ├── tfidf_vectorizer.joblib       # TF-IDF vectorizer
-# └── README.md                     # This documentation
+ .
+ ├── app.py                         # Main Streamlit app
+ ├── requirements.txt              # Python dependencies
+ ├── styles.css                    # Custom CSS styles
+ ├── fake_news_detection.ipynb    # Notebook with experiments & EDA
+ ├── Datasets/
+ │   ├── Fake.csv
+ │   └── True.csv
+ ├── app_pages/                    # Modular Streamlit pages
+ │   ├── How_to_Use.py
+ │   ├── Tips_for_Spotting_fake_news.py
+ │   └── About_the_technology.py
+ ├── pages/                        # (Duplicate, optional — remove if unused)
+ │   ├── How_to_Use.py
+ │   ├── Tips_for_Spotting_fake_news.py
+ │   └── About_the_technology.py
+ ├── fake_news_pipeline.joblib     # Trained ML pipeline
+ ├── ensemble_model.joblib         # Ensemble model
+ ├── lime_config.joblib            # LIME configuration
+ ├── tfidf_vectorizer.joblib       # TF-IDF vectorizer
+ └── README.md                     # This documentation
 
 
 
@@ -103,7 +103,7 @@ git clone https://github.com/prerna-patil26/fake-news-detection.git
 cd fake-news-detection
 
 # 📦 2. Install Dependencies
-# ```bash
+```bash
 # pip install -r requirements.txt
 # ```
 
