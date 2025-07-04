@@ -6,7 +6,8 @@
 
 The app includes insightful metrics, sentiment & readability analysis, **LIME-based model explanations**, and an intuitive UI for both **manual text input** and **URL-based predictions**.
 
-🔗 **Live Demo**: [Fake News Detection App]([(https://fake-news-detection-prerna.streamlit.app])
+🔗 **Live Demo**: [Fake News Detection App](https://fake-news-detection-prerna.streamlit.app)
+
 
 ---
 
