@@ -42,28 +42,34 @@ The app includes insightful metrics, sentiment & readability analysis, **LIME-ba
 ## 📂 Project Structure
 
 ```bash
-.
-├── app.py                         # Main Streamlit app
-├── requirements.txt              # Python dependencies
-├── styles.css                    # Custom CSS styles
+Fake-News-Detection/
+│
+├── app.py                        # Main Streamlit app
+├── requirements.txt             # Python dependencies
+├── styles.css                   # Custom CSS styles
 ├── fake_news_detection.ipynb    # Model training and EDA notebook
-
+│
 ├── Datasets/
-│   ├── Fake.csv                  # Fake news articles
-│   └── True.csv                  # Real news articles
-
-├── app_pages/
+│   ├── Fake.csv                 # Fake news data
+│   └── True.csv                 # Real news data
+│
+├── app_pages/                   # Modular UI pages
 │   ├── How_to_Use.py
 │   ├── Tips_for_Spotting_fake_news.py
 │   └── About_the_technology.py
+│
+├── pages/                       # (Optional duplicate UI pages)
+│   ├── How_to_Use.py
+│   ├── Tips_for_Spotting_fake_news.py
+│   └── About_the_technology.py
+│
+├── fake_news_pipeline.joblib    # Trained ML pipeline
+├── ensemble_model.joblib        # Ensemble model
+├── lime_config.joblib           # LIME configuration
+├── tfidf_vectorizer.joblib      # TF-IDF vectorizer
+│
+└── README.md                    # Project documentation
 
-├── models/
-│   ├── fake_news_pipeline.joblib
-│   ├── ensemble_model.joblib
-│   ├── lime_config.joblib
-│   └── tfidf_vectorizer.joblib
-
-└── README.md                     # Project documentation
 
 
 ```
